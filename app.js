@@ -19,14 +19,18 @@ function displayGif(gifValue) {
     } else {
       for (let i = 0; i < 9; i++) {
         $("#gif-view").append(
-          '<div class="card mr-5 mb-4" style="width: 13rem;">' +
+          '<div class="card mx-4 my-3" style="width: 13rem;">' +
+            '<div class="card-header">' +
+            "Title: " +
+            response.data[i].title +
+            "</div>" +
             "<img src=" +
             response.data[i].images.fixed_width.url +
             'class="card-img-top">' +
             '<div class="card-body">' +
             '<p class="card-text">' +
-            "Name of the gif: " +
-            response.data[i].title +
+            "Source: " +
+            response.data[i].url +
             "</p></div></div>"
         );
       }
