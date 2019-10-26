@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Gif Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../GiphyAjax/style.css" />
+  </head>
+
+  <body>
+    <div
+      style="background-image:url('https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;"
+    >
+      <div
+        class="jumbotron jumbotron-fluid"
+        style="
+      margin-bottom: 10px;"
+      >
+        <div class="container">
+          <h1 class="display-4">Gif Search</h1>
+          <p class="lead">
+            GIPHY SDK helps you integrate the world's largest GIF library,
+            customize a suite of powerful features, and boost engagement with
+            just a few lines of code.
+          </p>
+          <div id="buttons-view"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="input-group md-form form-sm form-2 pl-0">
+          <input
+            class="form-control my-0 py-1 amber-border"
+            type="text"
+            placeholder="Search to Add a Gif!"
+            aria-label="Add a Gif!"
+            id="gif-input"
+          />
+          <input id="add-gif" type="submit" value="Add a Gif!" />
+        </div>
+      </div>
+
+      <div class="container" style="border: solid 3px black;">
+        <div class="row" id="gif-view"></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../GiphyAjax/app.js"></script>
+</html>
