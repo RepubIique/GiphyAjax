@@ -18,7 +18,7 @@ function displayGif(gifValue) {
       renderButtons();
     } else {
       for (let i = 0; i < 9; i++) {
-        $("#gif-view").append(
+        $("#gif-view").prepend(
           '<div class="card mx-4 my-3" style="width: 13rem;">' +
             '<div class="card-header">' +
             "Title: " +
